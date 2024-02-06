@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/edPage-TG/docs#readme",
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "vitepress": "1.0.0-rc.41"
   }
 }
