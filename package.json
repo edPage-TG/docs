@@ -1,0 +1,26 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview",
+    "docs:deploy": "pnpm docs:build && gh-pages -d .vitepress/build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edPage-TG/docs.git"
+  },
+  "author": "arkane",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edPage-TG/docs/issues"
+  },
+  "homepage": "https://github.com/edPage-TG/docs#readme",
+  "devDependencies": {
+    "vitepress": "1.0.0-rc.41"
+  }
+}
