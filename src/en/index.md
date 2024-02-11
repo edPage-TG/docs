@@ -13,7 +13,7 @@ hero:
   actions:
     - theme: brand
       text: Getting started →
-      link: /guide/getting-started
+      link: /en/guide/getting-started
 
 features:
   - icon: 📊

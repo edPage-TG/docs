@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 import { en } from './locales/en'
-import { fr } from './locales/fr'
+import { fr, search as frSearch } from './locales/fr'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -36,6 +36,15 @@ export default defineConfig({
       alt: 'Docs',
       width: 48,
       height: 48,
+    },
+
+    search: {
+      provider: 'local',
+      options: {
+        locales: {
+          ...frSearch,
+        },
+      },
     },
 
     socialLinks: [
