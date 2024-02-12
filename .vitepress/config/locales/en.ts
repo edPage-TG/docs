@@ -47,16 +47,34 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
     {
       text: 'Introduction',
       collapsed: false,
-      items: [
-        { text: 'Getting started', link: 'getting-started' },
-      ],
+      items: [{ text: 'Getting started', link: 'getting-started' }],
     },
     {
       text: 'Others',
       collapsed: false,
-      items: [
-        { text: 'About', link: 'about' },
-      ],
+      items: [{ text: 'About', link: 'about' }],
     },
   ]
+}
+
+export const search: DefaultTheme.LocalSearchOptions['locales'] = {
+  en: {
+    translations: {
+      button: {
+        buttonText: 'Search',
+        buttonAriaLabel: 'Search',
+      },
+      modal: {
+        displayDetails: 'Display detailed list',
+        resetButtonTitle: 'Reset search',
+        backButtonTitle: 'Close search',
+        noResultsText: 'No results for',
+        footer: {
+          selectText: 'to select',
+          navigateText: 'to navigate',
+          closeText: 'to close',
+        },
+      },
+    },
+  },
 }
